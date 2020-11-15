@@ -53,7 +53,6 @@ $(document).on("click", ".btn", function() {
       for (i = 0; i < params.limit; i++) {
         var $img = $("<img>");
         var $div = $("<div>");
-        var $rating = $("<h5>");
         var gifObj = r.data[i];
         var gif = gifObj.images;
 
@@ -68,8 +67,7 @@ $(document).on("click", ".btn", function() {
         });
         // $div.attr("id", "gif-" + i);
         $div.addClass("gif-box");
-        $rating.text("Rating: " + gifObj.rating);
-        $div.append($img, $rating);
+        $div.append($img);
         $("#results").append($div);
       }
 
@@ -86,3 +84,4 @@ $(document).on("click", ".btn", function() {
     }
   });
 });
+
