@@ -11,6 +11,143 @@ body {
   background-color: #ffab94
 }
 
+/* NAVBAR */
+
+        * {
+            box-sizing: border-box;
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            font-family: 'Montserrat', sans-serif;
+        }
+
+        .navbar {
+            font-size: 16px;
+            background-color: #ffcbbd
+            border: 1px solid #ffcbbd;
+            padding-bottom: 10px;
+        }
+
+        .main-nav {
+            list-style-type: none;
+            display: none;
+        }
+
+        .nav-links,
+        .logo {
+            text-decoration: none;
+            color: rgba(255, 255, 255, 0.7);
+        }
+
+        .main-nav li {
+            text-align: center;
+            margin: 15px auto;
+        }
+
+        .logo {
+            display: inline-block;
+            font-size: 24px;
+            margin-top: 10px;
+            margin-left: 20px;
+        }
+
+        #hamburger {
+        width: 20px;
+        height: 20px;
+        display: block;
+        position: relative;
+        float: right;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        }
+
+        #hamburger span {
+        display: block;
+        position: absolute;
+        height: 4px;
+        width: 100%;
+        background: white;
+        border-radius: 9px;
+        opacity: 1;
+        left: 0;
+        transform: rotate(0deg);
+        transition: .25s ease-in-out;
+        }
+
+#hamburger span:nth-child(1) {
+  top: 0px;
+}
+
+#hamburger span:nth-child(2) {
+  top: 12px;
+}
+
+#hamburger.open span:nth-child(1) {
+  top: 14px;
+  transform: rotate(135deg);
+}
+
+#hamburger.open span:nth-child(2) {
+  opacity: 0;
+  left: -60px;
+}
+
+        .navbar-toggle {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+
+
+        .active {
+            display: block;
+        }
+
+        @media screen and (min-width: 768px) {
+            .navbar {
+                display: flex;
+                justify-content: space-between;
+                padding-bottom: 0;
+                height: 70px;
+                align-items: center;
+            }
+
+            .main-nav {
+                display: flex;
+                margin-right: 30px;
+                flex-direction: row;
+                justify-content: flex-end;
+            }
+
+            .main-nav li {
+                margin: 0;
+            }
+
+            .nav-links {
+                margin-left: 40px;
+            }
+
+            .logo {
+                margin-top: 0;
+            }
+
+            .navbar-toggle {
+                display: none;
+            }
+
+            .logo:hover,
+            .nav-links:hover {
+                color: rgba(255, 255, 255, 1);
+            }
+        }
+
+/* WAVE */
+
 .wave-container {
   position: relative;
   background: #fff0e5;
@@ -34,6 +171,8 @@ body {
   animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
+/* BASE CONTROLS */
+
 h1 {
   font-size: 5rem;
   margin: 7rem 1.25rem 2.5rem 1.25rem;
@@ -43,6 +182,8 @@ p {
   font-size: 1.5rem;
   margin: 0 1.25rem 5rem 1.25rem;
 }
+
+/* BUTTONS */
 
 .btn {
     padding: 6px 6px;
@@ -56,7 +197,7 @@ p {
 }
 
 /* 
-  Giphy API
+  GIPHY API
   https://codepen.io/ATwrx
   (c) Atwrx
 */
@@ -90,48 +231,52 @@ p {
         display: block;
     }
 	
-/* Gallery */
+/* GALLERY */
 
-.gallery-wrap {
-    width: 100%;
+.container {
+  margin: 0 auto;
+  max-width: 700px;
+  padding: 0 1rem;
+}
+
+.responsive-image {
+  max-width: 100%;
+}
+
+.cell img {
+  display: block;
+}
+
+@media screen and (min-width: 600px) {
+  .grid {
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .cell {
+    width: 50%;
+  }
 }
 
-@media only screen and (max-width: 500px) {
-.gallery-wrap {
-    width: 100%;
-    display: inline;
-}
-}
-
-@media only screen and (max-width: 500px) {
-.gallery-row {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-}
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(100% / 3);
+  }
 }
 
-.gallery-row {
-    width: 80%;
-    display: flex;
-    margin-left: auto;
-    margin-right: auto;
+/* Gallery MARGINS */
+.cell {
+  margin: 1rem;
 }
 
-.gallery-col {
-    width: 33.3%;
-    float: left;
+@media screen and (min-width: 600px) {
+  .cell {
+    width: calc(50% - 2rem);
+  }
 }
 
-@media only screen and (max-width: 500px) {
-.gallery-col {
-    width: 100%;
-}
-}
-
-.gallery-img {
-    width: 90%;
-    margin-left: auto;
-    margin-right: auto;
+@media screen and (min-width: 1000px) {
+  .cell {
+    width: calc(33.3333% - 2rem);
+  }
 }
