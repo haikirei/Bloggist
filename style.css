@@ -26,7 +26,6 @@ body {
         .navbar {
             font-size: 16px;
             background-color: #ffcbbd
-            border: 1px solid #ffcbbd;
             padding-bottom: 10px;
         }
 
@@ -87,7 +86,6 @@ body {
 
 #hamburger.open span:nth-child(1) {
   top: 14px;
-  transform: rotate(135deg);
 }
 
 #hamburger.open span:nth-child(2) {
@@ -196,6 +194,86 @@ p {
     background-color: #fff0e5;
 }
 
+/* FOOTER */
+
+.footer #button{
+	width:35px;
+	height:35px;
+	border: #ffd8c3 12px solid;
+	border-radius:35px;
+	margin:0 auto;
+	position:relative;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+}
+.footer #button:hover{
+	width:35px;
+	height:35px;
+	border: #3A3A3A 12px solid;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	position:relative;
+}
+.footer {
+	bottom:0;
+	left:0;
+	position:fixed;
+    width: 100%;
+    height: 3em;
+    overflow:hidden;
+    margin:0 auto;
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	z-index:999;
+}
+.footer:hover {
+	-webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+	height: 10em;
+}
+.footer #container{
+	margin-top:5px;
+	width:100%;
+   height:100%;
+  position:relative;
+  top:0;
+  left:0;
+	background: transparent;
+}
+.footer #cont{
+  position:relative;
+  top:-45px;
+  right:190px;
+	width:150px;
+	height:auto;
+	margin:0 auto;
+}
+.footer_center{
+	width:500px;
+	float:left;
+  text-align:center;
+}
+.footer h3{
+	font-family: 'Montserrat';
+	font-size: 16px;
+        color: #ffffff;
+	font-weight: 100;
+	margin-top:70px;
+	margin-left:40px;
+}
+
 /* 
   GIPHY API
   https://codepen.io/ATwrx
@@ -280,3 +358,4 @@ p {
     width: calc(33.3333% - 2rem);
   }
 }
+
