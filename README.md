@@ -1,7 +1,8 @@
 # Bloggist
 <b>By Carmen Jin</b><br><br>
 The goal of Bloggist is to provide gifs using Giphy's search algorithm for usage in blogs.
-Bloggist's search engine is powered by JQuery.
+Bloggist's search engine is powered by JQuery.<br><br>
+Live View: http://haikirei.myartsonline.com/Bloggist/
 <hr>
 <b>Planned Improvements:</b><br>
 <ul><li>Text animation on the SVG image's text.
