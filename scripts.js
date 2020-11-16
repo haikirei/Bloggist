@@ -91,10 +91,10 @@ $(document).on("click", ".btn", function() {
         // Image builder object
         $img.attr({
           // "width": "200px",
-          src: gif.fixed_height_still.url,
+          src: gif.fixed_height.url,
           "data-animate": gif.fixed_height.url,
-          "data-still": gif.fixed_height_still.url,
-          "data-state": "still",
+          "data-still": gif.fixed_height.url,
+          "data-state": "animate",
           class: "gif"
         });
         // $div.attr("id", "gif-" + i);
