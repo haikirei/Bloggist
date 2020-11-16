@@ -238,14 +238,30 @@ p {
 }
 
 .btn {
+    background: transparent;
     padding: 6px 6px;
     margin-right: 1rem;
     font-weight: 500;
-    letter-spacing: 2px;
+    font-style: normal;
+    font-size: 0.625rem;
+    letter-spacing: 0.3em;
     text-transform: uppercase;
     color: #ff9c8f;
     border: 2px solid #ff9c8f;
-    background-color: #fff0e5;
+    border-radius: 0;
+    background: linear-gradient(90deg, rgba(255,240,229,1) 0%, rgba(255,203,189,1) 35%, rgba(255,156,143,1) 100%);
+    background-position: 1% 50%;
+    background-size: 300% 300%;
+    transition: all 0.7s ease-out;
+    border: none;
+    border: 1px solid #ff9c8f;
+}
+
+.btn:hover {
+  color: #fff;
+  border: 1px solid rgb(255,240,229);
+  color: $white;
+  background-position: 99% 50%;
 }
 
 /* 
@@ -303,7 +319,7 @@ p {
     -o-transition: all 1s ease;
     -ms-transition: all 1s ease;
     transition: all 1s ease;
-	height: 10em;
+	height: 7em;
 }
 
 .footer #container{
