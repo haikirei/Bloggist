@@ -6,13 +6,13 @@ Bloggist's search engine is powered by JQuery.<br><br>
 <hr>
 <b>Planned Improvements:</b><br>
 <ul><li>Allow selection of # of search results.
+<li>Clear button
 <li>Text animation on the SVG image's text.
-<li>Button animations.
 </ul>
 <hr>
   <b>Wireframes:</b>
   <ul><li>Index.html - https://imgur.com/a/WDThQWi</ul>
 <hr>
   <b>User Story 1:</b> An anime fan may use the search engine to find gifs for their blogs.<br>
-  <b>User Story 2:</b> A forum member may use the search engine to find gifs for their posts.<br>
+  <b>User Story 2:</b> A forum user may use the search engine to find gifs for their posts.<br>
 
