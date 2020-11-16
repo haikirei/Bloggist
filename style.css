@@ -13,148 +13,148 @@ body {
 
 /* NAVBAR */
 
-        * {
-            box-sizing: border-box;
-            padding: 0;
-            margin: 0;
-        }
-
-        .navbar {
-            font-size: 16px;
-            background-color: #ffcbbd
-            padding-bottom: 10px;
-        }
-
-        .main-nav {
-            list-style-type: none;
-            display: none;
-        }
-
-        .nav-links,
-        .logo {
-            text-decoration: none;
-            color: rgba(255, 255, 255, 0.7);
-        }
-
-        .main-nav li {
-            text-align: center;
-            margin: 15px auto;
-        }
-
-        .logo {
-            display: inline-block;
-            font-size: 24px;
-            margin-top: 10px;
-            margin-left: 20px;
-			padding-top: 20px;
-			height: 70px;
-        }
-
-/* nav-icon-1 */
-
-.nav-icon-1{
-  width: 30px;
-  height: 30px;
-  position: relative;
-  transition: .1s;
-  margin: 10px 10px;
-  cursor: pointer;
-  display: inline-block;
+* {
+   box-sizing: border-box;
+   padding: 0;
+   margin: 0;
 }
-.nav-icon-1 span{
-  width: 5px;
-  height: 5px;
-  background-color: #fff;
-  display: block;
-  border-radius: 50%;
-  position: absolute;
 
+.navbar {
+   font-size: 16px;
+   background-color: #ffcbbd
+   padding-bottom: 10px;
+}
+
+.main-nav {
+    list-style-type: none;
+    display: none;
+}
+
+.nav-links, .logo {
+     text-decoration: none;
+     color: rgba(255, 255, 255, 0.7);
+}
+
+.main-nav li {
+     text-align: center;
+     margin: 15px auto;
+}
+
+.logo {
+      display: inline-block;
+      font-size: 24px;
+      margin-top: 10px;
+      margin-left: 20px;
+      padding-top: 20px;
+	  height: 70px;
+}
+
+/* HAMBURGER */
+
+.nav-icon-1 {
+     width: 30px;
+     height: 30px;
+     position: relative;
+     transition: .1s;
+     margin: 10px 10px;
+     cursor: pointer;
+     display: inline-block;
+}
+
+.nav-icon-1 span{
+     width: 5px;
+     height: 5px;
+     background-color: #fff;
+     display: block;
+     border-radius: 50%;
+     position: absolute;
 }
 
 .nav-icon-1:hover span{
-  transform: scale(1.2);
-  transition: 350ms cubic-bezier(.8, .5, .2, 1.4);
+     transform: scale(1.2);
+     transition: 350ms cubic-bezier(.8, .5, .2, 1.4);
 }
 
 .nav-icon-1 span:nth-child(1){
-  left: 0;
-  top: 0;
+     left: 0;
+     top: 0;
 }
 .nav-icon-1 span:nth-child(2){
-  left: 12px;
-  top: 0;
+     left: 12px;
+     top: 0;
 }
 .nav-icon-1 span:nth-child(3){
-  right: 0;
-  top: 0;
+     right: 0;
+     top: 0;
 }
 .nav-icon-1 span:nth-child(4){
-  left: 0;
-  top: 12px;
+     left: 0;
+     top: 12px;
 }
 .nav-icon-1 span:nth-child(5){
-  position: absolute;
-  left: 12px;
-  top: 12px;
+     position: absolute;
+     left: 12px;
+     top: 12px;
 }
 .nav-icon-1 span:nth-child(6){
-  right: 0px;
-  top: 12px;
+     right: 0px;
+     top: 12px;
 }
 .nav-icon-1 span:nth-child(7){
-  left: 0px;
-  bottom: 0px;
+     left: 0px;
+     bottom: 0px;
 }
 .nav-icon-1 span:nth-child(8){
-  position: absolute;
-  left: 12px;
-  bottom: 0px;
+     position: absolute;
+     left: 12px;
+     bottom: 0px;
 }
 .nav-icon-1 span:nth-child(9){
-  right: 0px;
-  bottom: 0px;
+     right: 0px;
+     bottom: 0px;
 }
 
 .nav-icon-1.open{
-  transform: rotate(180deg);
-  cursor: pointer;
-  transition: .2s cubic-bezier(.8, .5, .2, 1.4);
+     transform: rotate(180deg);
+     cursor: pointer;
+     transition: .2s cubic-bezier(.8, .5, .2, 1.4);
 }
 
 .nav-icon-1.open span{
-  border-radius: 50%;
-  transition-delay: 200ms;
-  transition: .5s cubic-bezier(.8, .5, .2, 1.4);
+     border-radius: 50%;
+     transition-delay: 200ms;
+     transition: .5s cubic-bezier(.8, .5, .2, 1.4);
 }
 
 .nav-icon-1.open span:nth-child(2) {
-  left: 6px;
-  top: 6px;
+    left: 6px;
+    top: 6px;
 }
+
 .nav-icon-1.open span:nth-child(4) {
-  left: 6px;
-  top: 18px;
+    left: 6px;
+    top: 18px;
 }
 .nav-icon-1.open span:nth-child(6) {
-  right: 6px;
-  top: 6px;
+    right: 6px;
+    top: 6px;
 }
 .nav-icon-1.open span:nth-child(8) {
-  left: 18px;
-  bottom: 6px;
+    left: 18px;
+    bottom: 6px;
 }
 
-        .navbar-toggle {
-            position: absolute;
-            top: 20px;
-            right: 20px;
-            cursor: pointer;
-            font-size: 14px;
-        }
+.navbar-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
 
-        .active {
-            display: block;
-        }
+.active {
+     display: block;
+}
 
         @media screen and (min-width: 768px) {
             .navbar {
@@ -197,11 +197,11 @@ body {
 /* WAVE */
 
 .wave-container {
-  position: relative;
-  background: #fff0e5;
-  color: #ff9c8f;
-  text-align: center;
-  overflow: hidden;
+    position: relative;
+    background: #fff0e5;
+    color: #ff9c8f;
+    text-align: center;
+    overflow: hidden;
 }
 
 @keyframes animateWave {
@@ -214,38 +214,38 @@ body {
 }
 
 .wave-container > svg {
-  display: block;
-  transform-origin: bottom;
-  animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
+    display: block;
+    transform-origin: bottom;
+    animation: animateWave 1000ms cubic-bezier(0.23, 1, 0.32, 1) forwards;
 }
 
 /* BASE CONTROLS */
 
 h1 {
-  font-size: 5rem;
-  margin: 7rem 1.25rem 2.5rem 1.25rem;
+    font-size: 5rem;
+    margin: 7rem 1.25rem 2.5rem 1.25rem;
 }
 
 p {
-  font-size: 1.5rem;
-  margin: 0 1.25rem 5rem 1.25rem;
+    font-size: 1.5rem;
+    margin: 0 1.25rem 5rem 1.25rem;
 }
 
 .blob {
-  margin: 0 auto;
-  max-width: 400px;
-  padding: 0 1rem;
+    margin: 0 auto;
+    max-width: 400px;
+    padding: 0 1rem;
 }
 
 input {
-  background-color: transparent;
-  padding: 0.15rem 2.75rem;
-  font-size: 0.75rem;
-  max-width: 100%;
-  border: 1px solid #ff9c8f;
-  font-weight: 500;
-  letter-spacing: 0.1em;
-  color: #ff9c8f
+    background-color: transparent;
+    padding: 0.15rem 2.75rem;
+    font-size: 0.75rem;
+    max-width: 100%;
+    border: 1px solid #ff9c8f;
+    font-weight: 500;
+    letter-spacing: 0.1em;
+    color: #ff9c8f
 }
 
 .btn {
@@ -269,10 +269,10 @@ input {
 }
 
 .btn:hover {
-  color: #fff;
-  border: 1px solid rgb(255,240,229);
-  color: $white;
-  background-position: 99% 50%;
+    color: #fff;
+    border: 1px solid rgb(255,240,229);
+    color: $white;
+    background-position: 99% 50%;
 }
 
 /* 
@@ -280,7 +280,6 @@ input {
   https://codepen.io/nickbraver/pen/mHLCp
   (c) Nick Braver
 */
-
 
 .footer #button{
 	width:35px;
@@ -355,7 +354,7 @@ input {
 .footer_center{
 	width:500px;
 	float:left;
-  text-align:center;
+    text-align:center;
 }
 
 .footer h3{

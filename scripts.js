@@ -40,7 +40,7 @@ navBarToggle.addEventListener('click', function () {
  */
 
 // Initial Search Buttons
-var topics = ["Inuyasha", "Sesshomaru", "Kagome"];
+var topics = ["Inuyasha", "Game of Thrones", "The Flash"];
 function addSearchBtns() {
   $("#buttons").html("");
   for (i = 0; i < topics.length; i++) {
