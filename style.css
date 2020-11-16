@@ -237,6 +237,17 @@ p {
   padding: 0 1rem;
 }
 
+input {
+  background-color: transparent;
+  padding: 0.15rem 2.75rem;
+  font-size: 0.75rem;
+  max-width: 100%;
+  border: 1px solid #ff9c8f;
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: #ff9c8f
+}
+
 .btn {
     background: transparent;
     padding: 6px 6px;
