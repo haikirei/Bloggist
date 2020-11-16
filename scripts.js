@@ -1,12 +1,32 @@
 /////////////////////////////////////////////
+// HAMBURGER ANIMATION
+/////////////////////////////////////////////
+/*!
+ * Hamburger Animation
+ * https://codepen.io/ahmadbassamemran/pen/VQwPGr
+ * (c) Ahmad Emran
+ */
+ 
+    const icons = document.querySelectorAll('.icon');
+    icons.forEach (icon => {  
+    icon.addEventListener('click', (event) => {
+    icon.classList.toggle("open");
+  });
+});
+
+/////////////////////////////////////////////
 // NAVBAR
 /////////////////////////////////////////////
+ * Mobile Responsive Navbar
+ * https://itnext.io/how-to-build-a-responsive-navbar-using-flexbox-and-javascript-eb0af24f19bf
+ * (c) Sukhjinder Arora
+ */
 
-let mainNav = document.getElementById('js-menu');
-let navBarToggle = document.getElementById('js-navbar-toggle');
+    let mainNav = document.getElementById('js-menu');
+    let navBarToggle = document.getElementById('js-navbar-toggle');
 
-navBarToggle.addEventListener('click', function () {
-  mainNav.classList.toggle('active');
+    navBarToggle.addEventListener('click', function () {
+    mainNav.classList.toggle('active');
 });
 
 /////////////////////////////////////////////
@@ -19,10 +39,10 @@ navBarToggle.addEventListener('click', function () {
  */
 
 // Initial Search Buttons
-var topics = ["Inuyasha", "Sesshomaru", "Kagome"];
-function addSearchBtns() {
-  $("#buttons").html("");
-  for (i = 0; i < topics.length; i++) {
+    var topics = ["Inuyasha", "Sesshomaru", "Kagome"];
+    function addSearchBtns() {
+    $("#buttons").html("");
+    for (i = 0; i < topics.length; i++) {
     var $button = $("<input type='button' class='btn btn-sm search-btn' />");
     $button.val(topics[i]);
     $("#buttons").append($button);
@@ -30,12 +50,12 @@ function addSearchBtns() {
 }
 addSearchBtns();
 
-$(document).on("click", ".btn", function() {
-  $("#results").html("");
-  // Beginning API call
-  var queryURL = "https://api.giphy.com/v1/gifs/search?";
-  var query;
-  var params = {
+    $(document).on("click", ".btn", function() {
+    $("#results").html("");
+// Beginning API call
+    var queryURL = "https://api.giphy.com/v1/gifs/search?";
+    var query;
+    var params = {
     q: query,
     limit: 10,
     api_key: "G30V6OUj5XaGZBzcczNrk3J0p4AINx2Q",
@@ -46,12 +66,12 @@ $(document).on("click", ".btn", function() {
   } else if ($("#user-search").val() !== "") {
     query = $("#user-search").val();
     topics.push(query);
-    if (topics.length > 6) {
+  if (topics.length > 6) {
       topics.shift();
     }
-    addSearchBtns();
+addSearchBtns();
   }
-  params.q = query;
+params.q = query;
 
   if ($(this).hasClass("trending")) {
     queryURL = "https://api.giphy.com/v1/gifs/trending?";
