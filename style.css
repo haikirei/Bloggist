@@ -19,10 +19,6 @@ body {
             margin: 0;
         }
 
-        body {
-            font-family: 'Montserrat', sans-serif;
-        }
-
         .navbar {
             font-size: 16px;
             background-color: #ffcbbd
@@ -58,8 +54,6 @@ body {
         display: block;
         position: relative;
         float: right;
-        transform: rotate(0deg);
-        transition: .5s ease-in-out;
         cursor: pointer;
         }
 
@@ -72,8 +66,6 @@ body {
         border-radius: 9px;
         opacity: 1;
         left: 0;
-        transform: rotate(0deg);
-        transition: .25s ease-in-out;
         }
 
 #hamburger span:nth-child(1) {
@@ -100,7 +92,6 @@ body {
             cursor: pointer;
             font-size: 14px;
         }
-
 
         .active {
             display: block;
@@ -181,6 +172,12 @@ p {
   margin: 0 1.25rem 5rem 1.25rem;
 }
 
+.blob {
+  margin: 0 auto;
+  max-width: 400px;
+  padding: 0 1rem;
+}
+
 /* BUTTONS */
 
 .btn {
@@ -194,7 +191,12 @@ p {
     background-color: #fff0e5;
 }
 
-/* FOOTER */
+/* 
+  FOOTER
+  https://codepen.io/nickbraver/pen/mHLCp
+  (c) Nick Braver
+*/
+
 
 .footer #button{
 	width:35px;
@@ -209,6 +211,7 @@ p {
     -ms-transition: all 1s ease;
     transition: all 1s ease;
 }
+
 .footer #button:hover{
 	width:35px;
 	height:35px;
@@ -220,12 +223,13 @@ p {
     transition: all 1s ease;
 	position:relative;
 }
+
 .footer {
 	bottom:0;
 	left:0;
 	position:fixed;
     width: 100%;
-    height: 3em;
+    height: 2em;
     overflow:hidden;
     margin:0 auto;
 	-webkit-transition: all 1s ease;
@@ -235,6 +239,7 @@ p {
     transition: all 1s ease;
 	z-index:999;
 }
+
 .footer:hover {
 	-webkit-transition: all 1s ease;
     -moz-transition: all 1s ease;
@@ -243,32 +248,36 @@ p {
     transition: all 1s ease;
 	height: 10em;
 }
+
 .footer #container{
 	margin-top:5px;
 	width:100%;
-   height:100%;
-  position:relative;
-  top:0;
-  left:0;
+    height:100%;
+    position:relative;
+    top:0;
+    left:0;
 	background: transparent;
 }
+
 .footer #cont{
-  position:relative;
-  top:-45px;
-  right:190px;
+    position:relative;
+    top:-45px;
+    right:190px;
 	width:150px;
 	height:auto;
 	margin:0 auto;
 }
+
 .footer_center{
 	width:500px;
 	float:left;
   text-align:center;
 }
+
 .footer h3{
 	font-family: 'Montserrat';
 	font-size: 16px;
-        color: #ffffff;
+    color: #ffffff;
 	font-weight: 100;
 	margin-top:70px;
 	margin-left:40px;
@@ -302,7 +311,7 @@ p {
 .gif-box {
     margin: 0.5rem;
     display: inline-block;
-    border: 1px solid black;
+    border: 1px solid #ff9c8f;
     height: auto;
     width: auto;
     img {
