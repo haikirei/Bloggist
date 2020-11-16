@@ -5,9 +5,9 @@ Bloggist's search engine is powered by JQuery.<br><br>
 Live View: http://haikirei.myartsonline.com/Bloggist/
 <hr>
 <b>Planned Improvements:</b><br>
-<ul><li>Text animation on the SVG image's text.
-<li>Button animation. 
-<li>Social media icons.
+<ul><li>Allow selection of # of search results.
+<li>Text animation on the SVG image's text.
+<li>Button animations.
 </ul>
 <hr>
   <b>Wireframe:</b>
