@@ -368,7 +368,7 @@ p {
 .gif-box {
     margin: 0.5rem;
     display: inline-block;
-    border: 1px solid #ff9c8f;
+    border: none;
     height: auto;
     width: auto;
     img {
