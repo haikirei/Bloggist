@@ -49,7 +49,12 @@ body {
 	  height: 70px;
 }
 
-/* HAMBURGER */
+/* 
+  HAMBURGER ANIMATION
+  https://codepen.io/ahmadbassamemran/pen/VQwPGr
+  (c) Ahmad Emran
+*/
+
 
 .nav-icon-1 {
      width: 30px;
@@ -240,13 +245,19 @@ p {
 input {
     background-color: transparent;
     padding: 0.15rem 2.75rem;
-    font-size: 0.75rem;
     max-width: 100%;
     border: 1px solid #ff9c8f;
+	font-size: 0.75rem;
     font-weight: 500;
     letter-spacing: 0.1em;
     color: #ff9c8f
 }
+
+/* 
+  BUTTON ANIMATION
+  https://codepen.io/dbox/pen/bdzeEw
+  (c) Daniel Box
+*/
 
 .btn {
     background: transparent;
@@ -273,6 +284,40 @@ input {
     border: 1px solid rgb(255,240,229);
     color: $white;
     background-position: 99% 50%;
+}
+ 
+/* 
+  CREDITS ANIMATION
+  https://codepen.io/Julka85/pen/dEqjGO
+  (c) Aura
+*/
+
+.textanime h5 {
+    max-width: 200px;
+    font-size: 16px;
+    color: #ff9c8f;
+    font-family: monospace;
+    overflow: hidden; =
+    border-right: .15em solid #ffc8be; /* Typwriter cursor */
+    white-space: nowrap; /* Single line content */
+    margin: 0 auto; /* Gives scrolling effect as the typing happens */
+    letter-spacing: .15em; 
+    animation: typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+/* TYPEWRITER EFFECT */
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* TYPEWRITER CURSOR EFFECT */
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: #ffc8be }
 }
 
 /* 
