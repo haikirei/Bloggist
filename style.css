@@ -297,8 +297,8 @@ input {
     font-size: 16px;
     color: #ff9c8f;
     font-family: monospace;
-    overflow: hidden; =
-    border-right: .15em solid #ffc8be; /* Typwriter cursor */
+    overflow: hidden; 
+    border-right: .15em solid #ff9c8f; /* Typwriter cursor */
     white-space: nowrap; /* Single line content */
     margin: 0 auto; /* Gives scrolling effect as the typing happens */
     letter-spacing: .15em; 
@@ -317,7 +317,7 @@ input {
 
 @keyframes blink-caret {
     from, to { border-color: transparent }
-    50% { border-color: #ffc8be }
+    50% { border-color: #ff9c8f }
 }
 
 /* 
